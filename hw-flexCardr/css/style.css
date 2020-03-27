@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-bg-color: white;
+    --user-im-size: 160px;
+    --user-im-border: 5px;
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.userCardContainer{
+    background-color: var(--main-bg-color);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 20px 0;
+    /*
+    min-width: 200px;
+    max-width: 320px;
+    */
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.userInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+    flex-grow: 1;
+}
+
+.userCardContainer > header {
+    background-image: url("https://image.freepik.com/free-vector/sunset-mountains-landscape-with-gradient-colors_23-2148266711.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+}
+
+.userImageContainer{
+    height: var(--user-im-size);
+    width: var(--user-im-size);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: var(--user-im-border);
+    border-color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    margin-top: -85px;
+}
+
+.userImageContainer > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.userInfoContainer > footer{
+    margin-top: auto;
+}
+
+.contact{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+.contact + .contact{
+   margin-left: 10px;
+    text-decoration: none;
+}
+
+.iconContainer{
+    margin-top: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.userInfo > h5{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.userInfo > h6{
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    color: gray;
+}
+
+
+.userInfo > h3 {
+    margin-top: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+
+    text-align: center;
+}
+.verticalAlignIcon{
+    text-align: center;
+}
+
+.iconContainer{
+    margin: 10px;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
